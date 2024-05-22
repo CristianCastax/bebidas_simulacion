@@ -1,0 +1,16 @@
+/* CSS */
+#formulario button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #formulario button:hover {
+    background-color: darkblue;
+  }
+  
+  /* ... Estilos adicionales ... */
+  

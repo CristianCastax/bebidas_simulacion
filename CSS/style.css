@@ -1,0 +1,51 @@
+body {
+    background-color: #ffffff;
+    /*background-image: url('https://enjoyklass.com/assets/img/recetas/Header_Banner.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Para que la imagen de fondo cubra todo el cuerpo */
+    background-position: center; /* Para centrar la imagen de fondo */
+}
+s
+h1, p {
+    margin: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.icons {
+    color: #002f92;
+}
+
+.sun {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #002f92;
+    border-radius: 50%;
+    position: relative;
+}
+
+.sun::after, .sun::before {
+    content: '';
+    position: absolute;
+    background-color: #002f92;
+}
+
+.sun::after {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 10px;
+}
+
+.sun::before {
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 2px;
+}

@@ -1,0 +1,72 @@
+/* Estilos personalizados */
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.cup-icons {
+    top: 20px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.cup-icons i {
+    color: #ffdd57;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cup-icons i:hover {
+    color: #ffcd38;
+    transform: scale(1.1);
+}
+
+.moon-icon {
+    z-index: 1;
+}
+
+.moon-icon i {
+    color: #f0e68c;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.moon-icon i:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}

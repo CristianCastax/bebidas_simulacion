@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Despedida</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/fin.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100 position-relative">
+        <div class="cup-icons position-absolute top-0 start-50 translate-middle-x">
+            <i class="fas fa-cocktail fa-5x mx-3"></i>
+            <i class="fas fa-wine-glass-alt fa-5x mx-3"></i>
+            <i class="fas fa-beer fa-5x mx-3"></i>
+            <i class="fas fa-coffee fa-5x mx-3"></i>
+        </div>
+        <div class="card text-center p-5 shadow-lg">
+            <h1 class="mb-4">¡Adiós!</h1>
+            <p class="mb-4">Pulse el botón a continuación para finalizar el programa.</p>
+            <button class="btn btn-primary btn-lg" onclick="finalizar()">FINALIZAR</button>
+        </div>
+        <div class="moon-icon position-absolute bottom-0 end-0 p-4">
+            <i class="fas fa-moon fa-5x"></i>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function finalizar() {
+            //alert("Para finalizar el programa, por favor cierre esta ventana o pestaña manualmente.");
+            
+            window.close();
+        }
+    </script>
+</body>
+</html>
