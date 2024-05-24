@@ -1,51 +1,72 @@
 body {
+    background: linear-gradient(to right, #ffffff, #dfff41);
+    color: #fff;
     background-color: #ffffff;
-    /*background-image: url('https://enjoyklass.com/assets/img/recetas/Header_Banner.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
-    background-size: cover; /* Para que la imagen de fondo cubra todo el cuerpo */
-    background-position: center; /* Para centrar la imagen de fondo */
-}
-s
-h1, p {
-    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
-.footer {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-}
-
-.icons {
-    color: #002f92;
-}
-
-.sun {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #002f92;
-    border-radius: 50%;
+.container-fluid {
     position: relative;
 }
 
-.sun::after, .sun::before {
-    content: '';
-    position: absolute;
-    background-color: #002f92;
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
-.sun::after {
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 10px;
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.sun::before {
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 2px;
+p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.custom-btn {
+    background-color: #e7f888; /* Fondo del botón */
+    color: black;              /* Color del texto */
+    padding: 10px 20px;        /* Espaciado del botón */
+    font-size: 1.2rem;         /* Tamaño del texto */
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #c3d21e; /* Fondo del botón al pasar el ratón */
+}
+
+.cup-icons {
+    top: 20px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.cup-icons i {
+    color: #8f8f8f;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cup-icons i:hover {
+    color: #ffcd38;
+    transform: scale(1.1);
+}
+
+.moon-icon {
+    z-index: 1;
+}
+
+.moon-icon i {
+    color: #565656;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.moon-icon i:hover {
+    color: #ffd700;
+    transform: scale(1.1);
 }

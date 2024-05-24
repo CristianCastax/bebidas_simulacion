@@ -12,21 +12,21 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
-        <div class="bg-white text-center p-4 rounded shadow">
-            <h1 class="text-primary">Bienvenido</h1>
-            <p class="text-primary">Pulse el botón a continuación para iniciar el programa.</p>
-            <a href="tamano.html" id="startButton" class="btn btn-primary">INICIAR</a>
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100 position-relative">
+        <div class="cup-icons position-absolute top-0 start-50 translate-middle-x d-flex justify-content-center">
+            <i class="fas fa-cocktail fa-5x mx-3"></i>
+            <i class="fas fa-wine-glass-alt fa-5x mx-3"></i>
+            <i class="fas fa-beer fa-5x mx-3"></i>
+            <i class="fas fa-coffee fa-5x mx-3"></i>
+            <i class="fas fa-glass-whiskey fa-5x mx-3"></i>
         </div>
-        <div class="footer mt-auto w-100 d-flex justify-content-between px-4">
-            <div class="icons d-flex justify-content-center align-items-center">
-                <i class="fas fa-cocktail fa-2x mx-2"></i>
-                <i class="fas fa-wine-glass-alt fa-2x mx-2"></i>
-                <i class="fas fa-beer fa-2x mx-2"></i>
-                <i class="fas fa-coffee fa-2x mx-2"></i>
-                <i class="fas fa-glass-whiskey fa-2x mx-2"></i>
-            </div>
-            <div class="sun"></div>
+        <div class="card text-center p-5 shadow-lg">
+            <h1 class="mb-4">¡Bienvenido!</h1>
+            <p class=" mb-4">Pulse el botón a continuación para iniciar el programa.</p>
+            <a href="tamano.html" id="startButton" class="btn btn-lg custom-btn">INICIAR</a>
+        </div>
+        <div class="moon-icon position-absolute bottom-0 end-0 p-4">
+            <i class="fas fa-sun fa-5x"></i>
         </div>
     </div>
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
@@ -34,8 +34,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="JS/funcion.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </body>
 </html>
