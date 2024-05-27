@@ -3,29 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Selección de Sabores</title>
+  <title>Formulario de Selección de Sabor</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      padding: 20px;
-    }
-    .form-container {
-      max-width: 400px;
-      margin: auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .form-check-label {
-      margin-left: 10px;
-    }
-    button {
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="CSS/bebidas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
   <div class="container">
@@ -35,25 +16,34 @@
           <h2 class="text-center mb-4">Selecciona tu sabor favorito:</h2>
 
           <form id="saboresForm">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sabor" id="saborChocolate" value="chocolate">
-              <label class="form-check-label" for="saborChocolate">
-                Chocolate
-              </label>
+            <div class="text-center">    
+              <div class="form-check  form-check-inline">
+                <input class="form-check-input" type="radio" name="sabor" id="saborChocolate" value="chocolate">
+                <label class="form-check-label" for="saborChocolate">
+                  Chocolate
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sabor" id="saborVainilla" value="vainilla">
+                <label class="form-check-label" for="saborVainilla">
+                  Vainilla
+                </label>
+              </div>
+              <div class="form-check form-check-inline ">
+                <input class="form-check-input" type="radio" name="sabor" id="saborFresa" value="fresa">
+                <label class="form-check-label" for="saborFresa">
+                  Fresa
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sabor" id="saborVainilla" value="vainilla">
-              <label class="form-check-label" for="saborVainilla">
-                Vainilla
-              </label>
+
+            <div class="row">
+              <div class="col text-center">
+                <a type="button" class="btn btn-secondary btn-block mt-3" href="tamano.html">Regresar</a>
+                <button type="button" class="btn btn-primary btn-block mt-3" onclick="avanzar()">Siguiente</button>                
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sabor" id="saborFresa" value="fresa">
-              <label class="form-check-label" for="saborFresa">
-                Fresa
-              </label>
-            </div>
-            <button type="button" class="btn btn-primary btn-block mt-3" onclick="avanzar()">Siguiente</button>
           </form>
         </div>
       </div>
