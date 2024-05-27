@@ -17,7 +17,7 @@ window.onload = function() {
 function abrirVentanaDespedida() {
   // Abrir la ventana de despedida
   window.open('fin.html', '_blank');
-  window.location.href = 'index.html';
+  window.location.href = 'https://trello.com/b/C4RAGSju/fis-enejun-2024';
 }
 
 function volverAtras() {
@@ -26,14 +26,66 @@ function volverAtras() {
 }
 
 function calcularImagen(tamano, sabor, hielo) {
-  if (tamano === 'Grande' && sabor === 'Café' && hielo === 'conHielo') {
-    return 'https://www.starbucks.com.pe/media/Grande-Cafe-Cold-Brew.png';
+  ///////////JAMAICA////////////
+  if (tamano === 'Chico' && sabor === 'Jamaica' && hielo === 'conHielo') {
+    return 'imagenes/JCC.png';
+  } 
+  else if(tamano === 'Chico' && sabor === 'Jamaica' && hielo === 'sinHielo') {
+    return 'imagenes/JCS.png';
+  } 
+  else if(tamano === 'Mediano' && sabor === 'Jamaica' && hielo === 'conHielo') {
+    return 'imagenes/JMC.png';
   }
-  // Aquí puedes escribir la lógica para calcular la URL de la imagen basada en los parámetros
-  // Por ejemplo, podrías tener una convención de nomenclatura para las imágenes y construir la URL en base a eso
-  // También podrías tener un objeto que mapee combinaciones de parámetros a URLs de imágenes
-  // Por ahora, vamos a devolver una imagen de marcador de posición como ejemplo
-  return "https://via.placeholder.com/150";
+  else if(tamano === 'Mediano' && sabor === 'Jamaica' && hielo === 'sinHielo') {
+    return 'imagenes/JMS.png';
+  }
+  else if(tamano === 'Grande' && sabor === 'Jamaica' && hielo === 'conHielo') {
+    return 'imagenes/JGC.png';
+  } 
+  else if(tamano === 'Grande' && sabor === 'Jamaica' && hielo === 'sinHielo') {
+    return 'imagenes/JGS.png';
+  }
+  ///////////HORCHATA////////////
+  else if (tamano === 'Chico' && sabor === 'Horchata' && hielo === 'conHielo') {
+    return 'imagenes/HCC.png';
+  } 
+  else if(tamano === 'Chico' && sabor === 'Horchata' && hielo === 'sinHielo') {
+    return 'imagenes/HCS.png';
+  } 
+  else if(tamano === 'Mediano' && sabor === 'Horchata' && hielo === 'conHielo') {
+    return 'imagenes/HMC.png';
+  }
+  else if(tamano === 'Mediano' && sabor === 'Horchata' && hielo === 'sinHielo') {
+    return 'imagenes/HMS.png';
+  }
+  else if(tamano === 'Grande' && sabor === 'Horchata' && hielo === 'conHielo') {
+    return 'imagenes/HGC.png';
+  } 
+  else if(tamano === 'Grande' && sabor === 'Horchata' && hielo === 'sinHielo') {
+    return 'imagenes/HGS.png';
+  }
+  ////////////LIMÓN//////////////
+  else if (tamano === 'Chico' && sabor === 'Limón' && hielo === 'conHielo') {
+    return 'imagenes/LCC.png';
+  } 
+  else if(tamano === 'Chico' && sabor === 'Limón' && hielo === 'sinHielo') {
+    return 'imagenes/LCS.png';
+  } 
+  else if(tamano === 'Mediano' && sabor === 'Limón' && hielo === 'conHielo') {
+    return 'imagenes/LMC.png';
+  }
+  else if(tamano === 'Mediano' && sabor === 'Limón' && hielo === 'sinHielo') {
+    return 'imagenes/LMS.png';
+  }
+  else if(tamano === 'Grande' && sabor === 'Limón' && hielo === 'conHielo') {
+    return 'imagenes/LGC.png';
+  } 
+  else if(tamano === 'Grande' && sabor === 'Limón' && hielo === 'sinHielo') {
+    return 'imagenes/LGS.png';
+  }
+  else {
+    return "https://via.placeholder.com/150";
+  }
 }
 
 function actualizarImagen() {
