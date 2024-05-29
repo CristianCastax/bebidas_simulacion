@@ -17,7 +17,7 @@ window.onload = function() {
 function abrirVentanaDespedida() {
   // Abrir la ventana de despedida
   window.open('fin.html', '_blank');
-  window.location.href = 'https://trello.com/b/C4RAGSju/fis-enejun-2024';
+  window.location.href = 'https://trello.com/b/tPNZp3bW/fiss1eq7';
 }
 
 function volverAtras() {
